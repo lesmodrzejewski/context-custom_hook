@@ -1,8 +1,12 @@
 import { Doughnut } from 'react-chartjs-2';
 import {Chart, ArcElement} from 'chart.js'
+import {useContext} from 'react';
+import UserContext from '../context/UserContext'
 Chart.register(ArcElement);
 
-const PieChart = ({goal, glasses}) => {
+const PieChart = ({glasses}) => {
+
+    const {goal} = useContext(UserContext);
 
     let goalRemaining;
 
