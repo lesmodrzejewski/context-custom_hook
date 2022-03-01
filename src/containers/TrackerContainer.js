@@ -15,9 +15,9 @@ const TrackerContainer = ({name, goal}) => {
         }
     }
 
-    const handleEmpty = () => {
-        setGlasses(0);
-    }
+    // const handleEmpty = () => {
+    //     setGlasses(0);
+    // }
 
     return (
         <>
